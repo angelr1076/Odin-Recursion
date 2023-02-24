@@ -2,8 +2,6 @@
 function fibs(n) {
   let fibArray = [];
 
-  debugger;
-
   for (let i = 0; i < n; i++) {
     if (i === 0) {
       fibArray.push(0);
@@ -25,7 +23,6 @@ function fibs(n) {
 // Now write another method fibsRec which solves the same problem recursively. This can be done in just a couple of lines (or 1 if you’re crazy, but don’t consider either of these lengths a requirement… just get it done).
 // @ts-check
 function fibRecursive(n) {
-  debugger;
   if (n <= 0) {
     return [];
   } else if (n === 1) {
@@ -34,7 +31,8 @@ function fibRecursive(n) {
     return [0, 1];
   } else {
     var prev = fibRecursive(n - 1);
-    return prev.concat(prev[prev.length - 1] + prev[prev.length - 2]);
+    var current = prev[prev.length - 1] + prev[prev.length - 2];
+    return prev.concat(current);
   }
 }
 
