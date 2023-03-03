@@ -17,11 +17,27 @@ function fibs(n) {
   return fibArray;
 }
 
-// let fibsEight = fibs(8);
-// console.log(fibsEight);
+// Test case 1: n = 0
+let result1 = fibs(0);
+console.log(result1); // []
+
+// Test case 2: n = 1
+result2 = fibs(1);
+console.log(result2); // [0]
+
+// Test case 3: n = 2
+result3 = fibs(2);
+console.log(result3); // [0, 1]
+
+// Test case 4: n = 10
+result4 = fibs(10);
+console.log(result4); // [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+
+// Test case 5: n = 20
+result5 = fibs(20);
+console.log(result5); // [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181]
 
 // Now write another method fibsRec which solves the same problem recursively. This can be done in just a couple of lines (or 1 if you’re crazy, but don’t consider either of these lengths a requirement… just get it done).
-// @ts-check
 function fibRecursive(n) {
   debugger;
   if (n <= 0) {
@@ -37,6 +53,22 @@ function fibRecursive(n) {
   }
 }
 
-let fibEight = fibRecursive(8);
-// let fibZero = fibRecursive(-3);
-console.log(fibEight);
+// Test case 1: n is 0
+let result6 = fibRecursive(0);
+console.log(result6); // []
+
+// Test case 2: n is 1
+result7 = fibRecursive(1);
+console.log(result7); // [0]
+
+// Test case 3: n is 2
+result8 = fibRecursive(2);
+console.log(result8); // [0, 1]
+
+// Test case 4: n is 5
+result9 = fibRecursive(5);
+console.log(result9); // [0, 1, 1, 2, 3]
+
+// Test case 5: n is 10
+result10 = fibRecursive(10);
+console.log(result10); // [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]

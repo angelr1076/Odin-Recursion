@@ -6,7 +6,6 @@ function mergeSort(array) {
     let halfArray = Math.floor(len / 2);
     // The first half of the data set
     let leftHalf = array.slice(0, halfArray);
-    console.log(halfArray);
     // The second half of the data set
     let rightHalf = array.slice(halfArray);
     // Sort the two halves
