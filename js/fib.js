@@ -37,6 +37,6 @@ function fibRecursive(n) {
   }
 }
 
-// let fibEight = fibRecursive(8);
+let fibEight = fibRecursive(8);
 // let fibZero = fibRecursive(-3);
-// console.log(fibZero);
+console.log(fibEight);
